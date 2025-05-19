@@ -1,0 +1,91 @@
+/* Tipografías y colores */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+nav a {
+  color: orange;
+  text-decoration: none;
+}
+
+main {
+  padding: 2em;
+}
+
+h1 {
+  color: orange;
+}
+
+.bienvenida {
+  background-color: #fff;
+  padding: 1em;
+  border: 1px solid #ccc;
+  margin-bottom: 2em;
+  border-radius: 8px;
+}
+
+.img-principal img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.lista-actividades ul {
+  background-color: white;
+  padding: 1em;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.lista-actividades li {
+  background-color: #ff6600;
+  color: white;
+  padding: 1em;
+  border-radius: 4px;
+  flex: 1 1 120px;
+  text-align: center;
+}
+
+/* Responsive con Media Queries */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .lista-actividades ul {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .lista-actividades li {
+    flex: 1 1 45%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .lista-actividades li {
+    flex: 1 1 30%;
+  }
+}
